@@ -38,7 +38,7 @@ const Home = () => {
     try {
       return BigNumber.from(activeClaimCondition.data?.availableSupply || 0);
     } catch {
-      return BigNumber.from(1_000_000_000);
+      return BigNumber.from(100_000_000_000);
     }
   }, [activeClaimCondition.data?.availableSupply]);
 
