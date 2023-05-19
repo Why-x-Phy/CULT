@@ -16,7 +16,7 @@ import styles from "../styles/Home.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
 
 const Home = () => {
-  const tokenAddress = "0x03728725240b021887355c943d040BF933F3d5F0";
+  const tokenAddress = "0xd81A30e511b3954a4b08919D5a48a4C37862d67C";
   const { contract } = useContract(tokenAddress, "token-drop");
   const address = useAddress();
   const [quantity, setQuantity] = useState(1);
@@ -224,15 +224,7 @@ const Home = () => {
         <p>Loading...</p>
       ) : (
         <>
-          {contractMetadata?.image && (
-            <Image
-              src={contractMetadata?.image}
-              alt={contractMetadata?.name!}
-              width={200}
-              height={200}
-              style={{ objectFit: "contain" }}
-            />
-          )}
+          
 
           <h2 className={styles.title}>Claim Tokens</h2>
           <p className={styles.explain}>
