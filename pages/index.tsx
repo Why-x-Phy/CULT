@@ -10,7 +10,6 @@ import {
   Web3Button,
 } from "@thirdweb-dev/react";
 import { BigNumber, utils } from "ethers";
-import Image from "next/image";
 import { useMemo, useState } from "react";
 import styles from "../styles/Home.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
