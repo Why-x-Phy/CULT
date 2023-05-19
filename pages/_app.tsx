@@ -1,9 +1,8 @@
 import React from "react";
-import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
-import Head from "next/head";
-import ThirdwebGuideFooter from "../components/guide/ThirdwebGuideFooter";
+import type { AppProps } from "next/app";
+import { ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
-import { AppProps } from "next/app";
+import Head from "next/head";
 
 // This is the chainId your dApp will work on.
 const activeChain = "ethereum";
@@ -12,15 +11,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider activeChain={activeChain}>
       <Head>
-        <title>thirdweb Token Drop Example</title>
+        <title>Easter Egg</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="thirdweb Example Repository to Showcase the token drop contract, including claim and transfer features."
+          content="Learn How To Use Thirdweb's NFT Drop contract and create a customizable NFT Drop minting page"
         />
         <meta
           name="keywords"
-          content="thirdweb token drop, thirdweb token transfer, thirdweb token claim, thirdweb token claim phases"
+          content="Thirdweb, thirdweb NFT drop, how to make thirdweb nft drop, how to make nft collection thirdweb"
         />
       </Head>
       <Component {...pageProps} />
