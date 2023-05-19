@@ -50,7 +50,7 @@ const Home = () => {
     const n = totalAvailableSupply.add(
       BigNumber.from(claimedSupply.data?.value || 0)
     );
-    if (n.gte(1_000_000_000)) {
+    if (n.gte(100_000_000_000)) {
       return "";
     }
     return n.toString();
@@ -80,7 +80,7 @@ const Home = () => {
         activeClaimCondition.data?.maxClaimableSupply || 0
       );
     } catch (e) {
-      bnMaxClaimable = BigNumber.from(1_000_000_000);
+      bnMaxClaimable = BigNumber.from(100_000_000_000);
     }
 
     let perTransactionClaimable;
@@ -89,7 +89,7 @@ const Home = () => {
         activeClaimCondition.data?.maxClaimablePerWallet || 0
       );
     } catch (e) {
-      perTransactionClaimable = BigNumber.from(1_000_000_000);
+      perTransactionClaimable = BigNumber.from(100_000_000_000);
     }
 
     if (perTransactionClaimable.lte(bnMaxClaimable)) {
@@ -101,7 +101,7 @@ const Home = () => {
     if (snapshotClaimable) {
       if (snapshotClaimable === "0") {
         // allowed unlimited for the snapshot
-        bnMaxClaimable = BigNumber.from(1_000_000_000);
+        bnMaxClaimable = BigNumber.from(100_000_000_000);
       } else {
         try {
           bnMaxClaimable = BigNumber.from(snapshotClaimable);
