@@ -118,8 +118,8 @@ const Home = () => {
       max = bnMaxClaimable;
     }
 
-    if (max.gte(1_000_000_000)) {
-      return 1_000_000_000;
+    if (max.gte(100_000_000_000)) {
+      return 100_000_000_000;
     }
     return max.toNumber();
   }, [
