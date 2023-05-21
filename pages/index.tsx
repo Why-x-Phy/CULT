@@ -202,6 +202,15 @@ const Home = () => {
     quantity,
   ]);
 
+  if (isLoading) {
+    
+    return (
+      
+      <div className={styles.loading}>      
+      </div>
+    )
+  }
+
   return (
     <div className={styles.container}>
       {(claimConditions.data &&
