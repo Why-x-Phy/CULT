@@ -225,9 +225,9 @@ const Home = () => {
         <>
           
 
-          <h2 className={styles.title}>Claim Tokens</h2>
+          <h2 className={styles.title}>Buy $JOEDON</h2>
           <p className={styles.explain}>
-            Claim ERC20 tokens from{" "}
+          Only whitelist can buy{" "}$
             <span className={styles.pink}>{contractMetadata?.name}</span>
           </p>
         </>
@@ -253,7 +253,7 @@ const Home = () => {
           className={`${styles.textInput} ${styles.noGapBottom}`}
         />
         <Web3Button
-          
+          className={styles.wallet}
           contractAddress={tokenAddress}
           action={(contract) => contract.erc20.claim(quantity)}
           onSuccess={() => alert("Claimed!")}
@@ -263,6 +263,7 @@ const Home = () => {
         </Web3Button>
       </div>
     </div>
+    
   );
 };
 

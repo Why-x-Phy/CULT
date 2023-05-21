@@ -1,5 +1,9 @@
 .noGapBottom {
   margin-bottom: 0px;
+  color: #3C1B32 !important;
+  
+  
+  
 }
 
 .mainButton {
@@ -35,7 +39,12 @@
 }
 
 .pink {
-  color: #cc25b3;
+  color: #3C1B32;
+}
+
+.wallet {
+  color:#f3f0f3 !important;
+  background: #3C1B32 !important;
 }
 
 .loading {
@@ -56,11 +65,13 @@
 
 .title {
   margin-bottom: 0px;
+  color: #3C1B32;
 }
 
 .explain {
   font-size: 1rem;
   font-weight: 600;
+  color: #3C1B32;
 }
 
 .secondaryButton {
@@ -82,8 +93,9 @@
 }
 
 .divider {
-  width: 50%;
-  border-color: grey;
+  width: 25%;
+  border-color: #3C1B32 !important;
+  color: #3C1B32 !important;
   opacity: 0.25;
   margin-bottom: 2rem;
 }
@@ -102,6 +114,7 @@
 
 .spacerBottom {
   margin-bottom: 16px;
+  
 }
 
 .claimGrid {
@@ -111,14 +124,15 @@
   justify-content: center;
   margin-bottom: 16px;
   gap: 2%;
+  
 }
 
 .textInput {
   width: 75%;
   background-color: transparent;
-  border: 1px solid grey;
+  border: 1px solid #3C1B32(155, 45, 45);
   border-radius: 8px;
-  color: #fff;
+  color: #3C1B32 !important;
   height: 48px;
   padding: 0 16px;
   font-size: 1rem;
@@ -129,6 +143,7 @@
   border-radius: 16px;
   width: 100%;
   padding: 16px;
+  ;
 }
 
 /* On mobile: */
