@@ -15,11 +15,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="DONJOE VS JOEDON"
+          content="$CULT"
         />
         <meta
           name="keywords"
-          content="DONJOE VS JOEDON"
+          content="$CULT"
         />
       </Head>
       <Component {...pageProps} />
