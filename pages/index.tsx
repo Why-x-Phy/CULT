@@ -234,7 +234,7 @@ const Home = () => {
         <>
           
 
-          <h2 className={styles.title}>Buy $JOEDON</h2>
+          <h2 className={styles.title}>Buy $CULT</h2>
           <p className={styles.explain}>
           Only whitelist can buy{" "}$
             <span className={styles.pink}>{contractMetadata?.name}</span>
