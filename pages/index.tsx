@@ -245,7 +245,8 @@ const Home = () => {
       <hr className={styles.divider} />
 
       <div className={styles.claimGrid}>
-        <input
+
+        {/*<input
           type="number"
           placeholder="Enter amount to claim"
           onChange={(e) => {
@@ -260,7 +261,8 @@ const Home = () => {
           }}
           value={quantity}
           className={`${styles.textInput} ${styles.noGapBottom}`}
-        />
+        />*/}
+
         <Web3Button
           className={styles.wallet}
           contractAddress={tokenAddress}
