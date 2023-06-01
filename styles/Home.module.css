@@ -46,7 +46,9 @@
   color:#f3f0f3 !important;
   background: #0f0f0f !important;
   border: 1px solid rgba(46, 44, 44, 0.4) !important;
-  box-shadow: 0 0 18px 0 #82919b !important; 
+  box-shadow: 0 0 16px 2px #242525 !important; 
+  border: none !important;
+  border-radius: 20px !important;
 }
 
 .loading {
