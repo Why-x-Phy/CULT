@@ -180,9 +180,9 @@ const Home = () => {
         activeClaimCondition.data?.currencyMetadata.value || 0
       );
       if (pricePerToken.eq(0)) {
-        return "Claim ($CULT)";
+        return "Buy ($CULT)";
       }
-      return `Claim (${priceToMint})`;
+      return `Buy (${priceToMint})`;
     }
     if (claimIneligibilityReasons.data?.length) {
       return parseIneligibility(claimIneligibilityReasons.data, quantity);
@@ -233,22 +233,22 @@ const Home = () => {
       ) : (
         <>
           
-
+{/*
           <h2 className={styles.title}>Buy $CULT</h2>
           <p className={styles.explain}>
           Only whitelist can buy{" "}$
             <span className={styles.pink}>{contractMetadata?.name}</span>
-          </p>
+          </p> */}
         </>
       )}
 
-      <hr className={styles.divider} />
+     {/* <hr className={styles.divider} /> */}
 
       <div className={styles.claimGrid}>
 
-        {/*<input
+        <input
           type="number"
-          placeholder="Enter amount to claim"
+          placeholder="Enter amount to buy"
           onChange={(e) => {
             const value = parseInt(e.target.value);
             if (value > maxClaimable) {
@@ -261,7 +261,7 @@ const Home = () => {
           }}
           value={quantity}
           className={`${styles.textInput} ${styles.noGapBottom}`}
-        />*/}
+        />
 
         <Web3Button
           className={styles.wallet}
